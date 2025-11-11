@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <a href="#" class="logo"><img src="img/logo6.png"></a>
+
+        <ul class="navbar">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="page.html">Pages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index2.html">Home</a> / <a href="shop.html">Shop</a> / <span id="breadcrumb-product">T-Shirt</span>
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="product-details-container">
+        <div class="product-details-wrapper">
+            <!-- Product Images -->
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="mainImage" src="img/boy1.png" alt="Product Image">
+                </div>
+                <div class="thumbnail-images">
+                    <img class="thumbnail active" src="img/boy1.png" alt="Thumbnail 1" onclick="changeImage('img/boy1.png')">
+                    <img class="thumbnail" src="img/bp1.png" alt="Thumbnail 2" onclick="changeImage('img/bp1.png')">
+                    <img class="thumbnail" src="img/bpp1.png" alt="Thumbnail 3" onclick="changeImage('img/bpp1.png')">
+                    <img class="thumbnail" src="img/bp2.png" alt="Thumbnail 4" onclick="changeImage('img/bp2.png')">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info-section">
+                <h1 id="product-title">Men's Fashion T-shirt</h1>
+                <div class="product-price-section">
+                    <span class="current-price" id="product-price">Rs.1200.00</span>
+                </div>
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <h3>Product Details</h3>
+                    <p id="product-full-description">
+                        This cotton T-shirt has a sporty jersey-style design. It features a bold "66" on the front and sleeves, with "King" written above in cursive. Black stripes run across the sleeves and bottom, and the V-neck adds to its casual, athletic look. Comfortable and breathable, it is perfect for everyday wear.
+                    </p>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="size-selection">
+                    <h3>Select Sizes</h3>
+                    <div class="size-options">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                        <button class="size-btn">XXL</button>
+                    </div>
+                </div>
+
+                <!-- Quantity and Add to Cart -->
+                <div class="quantity-cart-section">
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="decreaseQty()">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button class="qty-btn" onclick="increaseQty()">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="featured-section">
+        <h2>Featured Products</h2>
+        <div class="featured-products">
+            <div class="featured-card">
+                <img src="img/gp1.png" alt="Featured Product">
+                <h3>Oversize Gents Pant</h3>
+                <p class="featured-price">Rs.4500.00</p>
+            </div>
+            <div class="featured-card">
+                <img src="img/bag1.png" alt="Featured Product">
+                <h3>Side Bags</h3>
+                <p class="featured-price">Rs.2000.00</p>
+            </div>
+            <div class="featured-card">
+                <img src="img/w2.png" alt="Featured Product">
+                <h3>Classic Watch</h3>
+                <p class="featured-price">Rs.12500.00</p>
+            </div>
+            <div class="featured-card">
+                <img src="img/sun1.png" alt="Featured Product">
+                <h3>Designer Sunglasses</h3>
+                <p class="featured-price">Rs.2000.00</p>
+            </div>
+        </div>
+    </div>
+    
+
+    < <!--Js link-->
+     <script type="text/javascript" src="js/products-data.js">
+
+        
+
+       
+    </script>
+</body>
+</html>
